@@ -1,0 +1,49 @@
+<!-- File: css.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction to CSS</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      color: #e91e63;
+    }
+    code {
+      background-color: #eee;
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
+    }
+    a {
+      color: #e91e63;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>What is CSS?</h1>
+  <p>CSS stands for <strong>Cascading Style Sheets</strong>. It's used to style HTML elements.</p>
+
+  <h2>Basic CSS Properties</h2>
+  <ul>
+    <li><code>color</code> – text color</li>
+    <li><code>background-color</code> – background color</li>
+    <li><code>font-size</code> – size of text</li>
+    <li><code>margin</code> – space outside an element</li>
+    <li><code>padding</code> – space inside an element</li>
+  </ul>
+
+  <p>CSS makes your page look good!</p>
+
+  <p><a href="html.html">← Back to HTML Page</a></p>
+</body>
+</html>
