@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Introduction to CSS</title>
+  <title>Essential CSS Code</title>
   <style>
     body {
       font-family: sans-serif;
@@ -15,10 +15,14 @@
     h1 {
       color: #e91e63;
     }
-    code {
+    pre {
       background-color: #eee;
-      padding: 0.1rem 0.3rem;
-      border-radius: 4px;
+      padding: 1rem;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    code {
+      font-family: monospace;
     }
     a {
       color: #e91e63;
@@ -30,20 +34,39 @@
   </style>
 </head>
 <body>
-  <h1>What is CSS?</h1>
-  <p>CSS stands for <strong>Cascading Style Sheets</strong>. It's used to style HTML elements.</p>
+  <h1>Essential CSS Code</h1>
+  <p>Here are some basic CSS code snippets you should know:</p>
 
-  <h2>Basic CSS Properties</h2>
-  <ul>
-    <li><code>color</code> – text color</li>
-    <li><code>background-color</code> – background color</li>
-    <li><code>font-size</code> – size of text</li>
-    <li><code>margin</code> – space outside an element</li>
-    <li><code>padding</code> – space inside an element</li>
-  </ul>
+  <h2>Change Text Color</h2>
+  <pre><code>p {
+  color: blue;
+}</code></pre>
 
-  <p>CSS makes your page look good!</p>
+  <h2>Change Font Size</h2>
+  <pre><code>h1 {
+  font-size: 32px;
+}</code></pre>
 
-  <p><a href="html.html">← Back to HTML Page</a></p>
+  <h2>Set Background Color</h2>
+  <pre><code>body {
+  background-color: #f0f0f0;
+}</code></pre>
+
+  <h2>Center Text</h2>
+  <pre><code>div {
+  text-align: center;
+}</code></pre>
+
+  <h2>Add Padding</h2>
+  <pre><code>.box {
+  padding: 20px;
+}</code></pre>
+
+  <h2>Add Margin</h2>
+  <pre><code>.box {
+  margin: 10px;
+}</code></pre>
+
+  <p><a href="html.html">← Back to HTML Tags</a></p>
 </body>
 </html>
