@@ -1,66 +1,53 @@
-html_tags = {
-    "Structure Tags": [
-        {"tag": "<!DOCTYPE html>", "description": "Defines the document type and HTML version."},
-        {"tag": "<html>", "description": "Root element of the HTML document."},
-        {"tag": "<head>", "description": "Contains meta information and links."},
-        {"tag": "<body>", "description": "Holds the visible content of the page."}
-    ],
-    "Text Formatting Tags": [
-        {"tag": "<h1> to <h6>", "description": "Headers, <h1> is the largest."},
-        {"tag": "<p>", "description": "Paragraph of text."},
-        {"tag": "<br>", "description": "Line break."},
-        {"tag": "<strong>", "description": "Bold important text."},
-        {"tag": "<em>", "description": "Italic emphasized text."},
-        {"tag": "<span>", "description": "Inline container for text."},
-        {"tag": "<div>", "description": "Block container for grouping."}
-    ],
-    "Links & Media Tags": [
-        {"tag": "<a>", "description": "Creates a hyperlink."},
-        {"tag": "<img>", "description": "Displays an image."},
-        {"tag": "<video>", "description": "Embeds a video."},
-        {"tag": "<audio>", "description": "Embeds audio content."}
-    ],
-    "List Tags": [
-        {"tag": "<ul>", "description": "Unordered list."},
-        {"tag": "<ol>", "description": "Ordered list."},
-        {"tag": "<li>", "description": "List item."}
-    ],
-    "Table Tags": [
-        {"tag": "<table>", "description": "Defines a table."},
-        {"tag": "<tr>", "description": "Table row."},
-        {"tag": "<td>", "description": "Table cell."},
-        {"tag": "<th>", "description": "Table header cell."}
-    ],
-    "Form Tags": [
-        {"tag": "<form>", "description": "Form container."},
-        {"tag": "<input>", "description": "Input field."},
-        {"tag": "<textarea>", "description": "Multiline text input."},
-        {"tag": "<button>", "description": "Clickable button."},
-        {"tag": "<label>", "description": "Label for inputs."},
-        {"tag": "<select>", "description": "Drop-down list."},
-        {"tag": "<option>", "description": "Item in a drop-down list."}
-    ],
-    "Metadata Tags": [
-        {"tag": "<title>", "description": "Page title in the browser tab."},
-        {"tag": "<meta>", "description": "Page metadata like charset, viewport."},
-        {"tag": "<link>", "description": "Link to external stylesheets."},
-        {"tag": "<script>", "description": "Embeds or links to JavaScript."},
-        {"tag": "<style>", "description": "CSS styles inside HTML."}
-    ]
-}
+<!-- File: html.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Essential HTML Tags</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      color: #1a73e8;
+    }
+    code {
+      background-color: #eee;
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
+    }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Essential HTML Tags</h1>
+  <p>Here are some important HTML tags everyone should know:</p>
 
-def print_html_reference(tags_dict):
-    print("="*60)
-    print(" Essential HTML Tags to Know ".center(60, "="))
-    print("="*60)
-    
-    for category, tags in tags_dict.items():
-        print(f"\n[{category}]")
-        print("-" * len(category))
-        for tag in tags:
-            print(f"{tag['tag']:<15} - {tag['description']}")
-    print("\n" + "="*60)
+  <ul>
+    <li><code>&lt;!DOCTYPE html&gt;</code> – Declares the document type.</li>
+    <li><code>&lt;html&gt;</code> – The root element of an HTML page.</li>
+    <li><code>&lt;head&gt;</code> – Contains meta-information about the page.</li>
+    <li><code>&lt;title&gt;</code> – Sets the title of the page (shown in browser tab).</li>
+    <li><code>&lt;body&gt;</code> – Contains the visible content of the page.</li>
+    <li><code>&lt;h1&gt; to &lt;h6&gt;</code> – Headings, from largest (<code>h1</code>) to smallest (<code>h6</code>).</li>
+    <li><code>&lt;p&gt;</code> – Paragraph.</li>
+    <li><code>&lt;a&gt;</code> – Anchor/link.</li>
+    <li><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, and <code>&lt;li&gt;</code> – Lists (unordered, ordered, and list items).</li>
+    <li><code>&lt;img&gt;</code> – Embeds an image.</li>
+    <li><code>&lt;div&gt;</code> – Generic container for content and layout.</li>
+    <li><code>&lt;span&gt;</code> – Inline container for text or elements.</li>
+  </ul>
 
-if __name__ == "__main__":
-    print_html_reference(html_tags)
-
+  <p><a href="css.html">Go to CSS Code →</a></p>
+</body>
+</html>
